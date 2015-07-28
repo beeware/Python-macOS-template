@@ -3,4 +3,4 @@
 CONTENTS_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd )
 export PYTHONPATH="$CONTENTS_DIR/Resources/app":"$CONTENTS_DIR/Resources/app_packages"
 cd "$CONTENTS_DIR"
-../Resources/python/bin/python3 -m {{ cookiecutter.app_name }}
+Resources/python/bin/python -m {{ cookiecutter.app_name }}
