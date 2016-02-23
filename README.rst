@@ -1,7 +1,7 @@
 Python OS/X Template
 ====================
 
-A template for building Python apps that will run under OS/X.
+A template for building Python 3.4 apps that will run under OS/X.
 
 Using this template
 -------------------
