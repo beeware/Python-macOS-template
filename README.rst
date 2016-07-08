@@ -1,7 +1,10 @@
-Python OS/X Template
-====================
+Python macOS Template
+=====================
 
-A template for building Python 3.4 apps that will run under OS/X.
+A template for building Python apps that will run under macOS.
+
+**This repository branch contains a template for Python 3.4**.
+Other Python versions are available by cloning other branches of repository.
 
 Using this template
 -------------------
@@ -11,18 +14,22 @@ Using this template
 
     $ pip install cookiecutter
 
-2. Run ``cookiecutter`` on the Python-OS/X template::
+2. Run ``cookiecutter`` on the Python-macOS template::
 
-    $ cookiecutter https://github.com/pybee/Python-OSX-template
+    $ cookiecutter https://github.com/pybee/Python-macOS-template --checkout 3.4
 
-3. `Download the Python OS/X support package`_, and extract it. This
-   will give you two frameworks.
+3. `Download the Python Apple support package for macOS`_, and extract it. This
+   will give you four frameworks.
+
+   * ``BZip2.framework ``
 
    * ``OpenSSL.framework``
 
+   * ``XZ.framework ``
+
    * ``Python.framework``
 
-   Alternatively, you can download the `Python-OSX-support`_ project, and
+   Alternatively, you can download the `Python-Apple-support`_ project, and
    build your own versions of these frameworks.
 
    These framework directories should be placed in the same directory as
@@ -37,14 +44,13 @@ directory structure that looks something like::
         Contents/
             MacOS/
                 My Project
-
-            app/
-                myproject/
+            Resources/
+                app/
                     ...
-            app_packages/
-                ...
+                app_packages/
+                    ...
 
-The top level directory should identify as an OS/X application, and can be
+The top level directory should identify as an macOS application, and can be
 distributed as a standalone package.
 
 Next steps
@@ -55,11 +61,11 @@ be able to output to the console, and see that output in XCode, but if you
 tap the app icon on your phone, you won't see anything - because there isn't a
 visible console on an iPhone.
 
-To do something interesting, you'll need to work with the native OS/X system
+To do something interesting, you'll need to work with the native macOS system
 libraries to draw widgets and respond to screen taps. The `Rubicon`_
 Objective C bridging library can be used to enable an easy interface with the
-OS/X system libraries. You could also use the `toga`_ library to provides a
-cross-platform widget toolkit that supports OS/X.
+macOS system libraries. You could also use the `toga`_ library to provides a
+cross-platform widget toolkit that supports macOS.
 
 If you have any external library dependencies (like ``toga``, or anything other
 third-party library), you should install the library code into the
@@ -67,7 +73,7 @@ third-party library), you should install the library code into the
 directory on a normal Python install.
 
 .. _cookiecutter: http://github.com/audreyr/cookiecutter
-.. _Download the Python OS/X support package: https://github.com/pybee/Python-OSX-support/releases/download/3.4.2-b1/Python-3.4.2-OSX-support.b1.tar.gz
-.. _Python-OSX-support: http://github.com/pybee/Python-OSX-support
+.. _Download the Python Apple support package for macOS: https://github.com/pybee/Python-Apple-support/releases/download/3.4-b1/Python-3.4-macOS-support.b1.tar.gz
+.. _Python-Apple-support: http://github.com/pybee/Python-Apple-support
 .. _toga: http://pybee.org/toga
 .. _Rubicon: http://github.com/pybee/rubicon-objc
