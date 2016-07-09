@@ -21,7 +21,7 @@ Using this template
 3. `Download the Python Apple support package for macOS`_, and extract it. This
    will give you four frameworks.
 
-   * ``BZip2.framework ``
+   * ``BZip2.framework``
 
    * ``OpenSSL.framework``
 
