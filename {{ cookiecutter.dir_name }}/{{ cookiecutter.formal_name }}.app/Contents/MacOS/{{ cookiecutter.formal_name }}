@@ -2,4 +2,9 @@
 CONTENTS_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd )
 export PYTHONPATH="$CONTENTS_DIR/Resources/app":"$CONTENTS_DIR/Resources/app_packages"
 cd "$CONTENTS_DIR/Resources"
-python/bin/python3 app/{{ cookiecutter.app_name }}/app.py
+python/bin/python3 -c "
+from {{ cookiecutter.app_name.replace('-', '_') }}.app import {{ cookiecutter.class_name }}
+
+app = {{ cookiecutter.class_name }}('{{ cookiecutter.formal_name }}', '{{ cookiecutter.bundle }}.{{ cookiecutter.app_name }}')
+app.main_loop()
+"
