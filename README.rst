@@ -35,8 +35,18 @@ Using this template
    project template - the ``Contents`` subdirectory of the main application
    bundle.
 
-If you've done this correctly, a project called ``myproject`` should have a
-directory structure that looks something like::
+4. Add your code to the template. At the very minimum, you need to have an
+   ``app/<app name>/__main__.py`` file that defines an entry point that
+   will start your application. If ``<app name>`` contains a dash, it will be
+   converted to an underscore in the expected package name
+
+   If your code has any dependencies, they should be installed under the
+   ``app_packages`` directory.
+
+
+If you've done this correctly, a project with a formal name of ``My Project``,
+with an app name of ```my-project`` should have a directory structure that
+looks something like::
 
     My Project.app/
         Contents/
@@ -44,7 +54,9 @@ directory structure that looks something like::
                 My Project
             Resources/
                 app/
-                    ...
+                    my_project/
+                        __init__.py
+                        __main__.py
                 app_packages/
                     ...
 
