@@ -92,7 +92,7 @@ third-party library), you should install the library code into the
 directory on a normal Python install.
 
 .. _cookiecutter: http://github.com/audreyr/cookiecutter
-.. _Download the Python Apple support package for macOS: https://github.com/pybee/Python-Apple-support/releases/download/3.4-b1/Python-3.4-macOS-support.b1.tar.gz
+.. _Download the Python Apple support package for macOS: https://s3-us-west-2.amazonaws.com/pybee-briefcase-support/Python-Apple-support/3.4/macOS/Python-3.4-macOS-support.b3.tar.gz
 .. _Python-Apple-support: http://github.com/pybee/Python-Apple-support
 .. _toga: http://pybee.org/toga
 .. _Rubicon: http://github.com/pybee/rubicon-objc
