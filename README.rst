@@ -3,7 +3,7 @@ Python macOS Template
 
 A template for building Python apps that will run under macOS.
 
-**This repository branch contains a template for Python 3.5**.
+**This repository branch contains a template for Python 3.6**.
 Other Python versions are available by cloning other branches of repository.
 
 Using this template
@@ -23,7 +23,7 @@ However, if you *do* want use this template directly...
 
 2. Run ``cookiecutter`` on the Python-macOS template::
 
-    $ cookiecutter https://github.com/pybee/Python-macOS-template --checkout 3.5
+    $ cookiecutter https://github.com/pybee/Python-macOS-template --checkout 3.6
 
 3. `Download the Python Apple support package for macOS`_, and extract it. This
    will give you four frameworks.
@@ -92,7 +92,7 @@ third-party library), you should install the library code into the
 directory on a normal Python install.
 
 .. _cookiecutter: http://github.com/audreyr/cookiecutter
-.. _Download the Python Apple support package for macOS: https://s3-us-west-2.amazonaws.com/pybee-briefcase-support/Python-Apple-support/3.5/macOS/Python-3.5-macOS-support.b4.tar.gz
+.. _Download the Python Apple support package for macOS: https://s3-us-west-2.amazonaws.com/pybee-briefcase-support/Python-Apple-support/3.6/macOS/Python-3.6-macOS-support.b1.tar.gz
 .. _Python-Apple-support: http://github.com/pybee/Python-Apple-support
 .. _toga: http://pybee.org/toga
 .. _Rubicon: http://github.com/pybee/rubicon-objc
