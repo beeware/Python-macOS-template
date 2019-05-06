@@ -32,7 +32,7 @@ However, if you *do* want use this template directly...
 
    * ``OpenSSL.framework``
 
-   * ``XZ.framework ``
+   * ``XZ.framework``
 
    * ``Python.framework``
 
