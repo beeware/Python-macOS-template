@@ -1,5 +1,6 @@
 {
     "app_name": "appname",
+    "version": "1.0.0",
     "formal_name": "App Name",
     "dir_name": "macOS",
     "bundle": "com.example",
